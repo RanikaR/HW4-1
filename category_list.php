@@ -24,13 +24,41 @@ $statement->closeCursor();
 <main>
     <h1>Category List</h1>
     <table>
+  <!-- add code for the rest of the table here -->
         <tr>
             <th>Name</th>
             <th>&nbsp;</th>
         </tr>
-        
-        <!-- add code for the rest of the table here -->
-    
+		<tr>
+	<td>Guitars</td>
+	<td>	
+	    <form action="delete_category.php" method="post">
+		<input type="hidden" name="category_id"
+			value="1"/>
+		<input type="submit" value="Delete"/>
+	     </form>
+	</td>
+	</tr>
+		<tr>
+	<td>Basses</td>
+	<td>
+	    <form action="delete_category.php" method="post">
+		<input type="hidden" name="category_id"
+			value="2"/>
+		<input type="submit" value="Delete"/>
+	     </form>
+	</td>
+	</tr>
+		<tr>
+	<td>Drums</td>
+	<td>
+	    <form action="delete_category.php" method="post">
+		<input type="hidden" name="category_id"
+			value="3"/>
+		<input type="submit" value="Delete"/>
+	     </form>
+	</td>
+	</tr>
     </table>
 
     <h2>Add Category</h2>
